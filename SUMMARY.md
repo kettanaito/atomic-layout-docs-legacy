@@ -19,3 +19,7 @@
 * [Layout](api/layout/README.md)
   * [configure\(\)](api/layout/configure.md)
 
+## Developers
+
+* [Grid areas parsing](developers/grid-areas-parsing.md)
+

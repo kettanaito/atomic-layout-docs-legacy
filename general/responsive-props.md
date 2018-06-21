@@ -8,9 +8,7 @@ Responsive props is a simple concept that conditionally applies the given prop v
 
 To declare a responsive prop follow the next schema:
 
-```text
-propName + ?breakpointName + ?behavior
-```
+![propName + ?breakpointName + ?behavior](../.gitbook/assets/responsive-prop.png)
 
 ### Breakpoints
 
