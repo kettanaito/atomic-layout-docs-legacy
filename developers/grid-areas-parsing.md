@@ -19,7 +19,7 @@ type TAreaList = {
 }
 ```
 
-First step if getting the array of unique grid area names, their breakpoint and its behavior.
+First step is getting the array of unique grid area names, their breakpoint and its behavior.
 
 ### Example
 
