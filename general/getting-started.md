@@ -75,7 +75,7 @@ Note that you can **nest** another compositions inside those grid areas \(`<Thum
 
 * [Configure the layout](../api/layout/configure.md) to create powerful developer and user experience,
 * Read more on Components to know how to handle your use case,
-* Learn how to create truly responsive layouts with [Responsive props](responsive-props.md),
+* Learn how to create truly responsive layouts with [Responsive props](../fundamentals/responsive-props.md),
 * See [Best practices](best-practices.md) to bring your layouts to the next level.
 
 

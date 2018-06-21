@@ -2,21 +2,13 @@
 
 ## Introduction
 
-Responsive props is a simple concept that conditionally applies the given prop value on the certain breakpoint, when the prop's name is suffixed with that breakpoint's name.
+Any prop is considered a responsive props if its name is suffixed with the enlisted breakpoint name and its behavior, if necessary.
 
 ## Declaration
 
 To declare a responsive prop follow the next schema:
 
 ![propName + ?breakpointName + ?behavior](../.gitbook/assets/responsive-prop.png)
-
-### Breakpoints
-
-By default, Atomic layout uses [Bootstrap 4 Grid breakpoints](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options):
-
-| **Breakpoint name** | **xs** | **sm** | **md** | **lg** | **xl** |
-| --- | --- |
-| **Screen size** | &lt;576px | ≥576px | ≥768px | ≥992px | ≥1200px |
 
 ### **Behavior**
 

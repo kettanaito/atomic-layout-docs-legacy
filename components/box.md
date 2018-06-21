@@ -6,7 +6,7 @@ description: A primitive component responsible for spacial distribution.
 
 ## Props
 
-Supports all the [Responsive props](../general/responsive-props.md), **except the grid-specific ones**.
+Supports all the [Responsive props](../fundamentals/responsive-props.md), **except the grid-specific ones**.
 
 ## Example
 

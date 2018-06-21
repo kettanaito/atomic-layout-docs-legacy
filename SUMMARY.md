@@ -6,7 +6,6 @@
 
 * [Philosophy](general/philosophy.md)
 * [Getting started](general/getting-started.md)
-* [Responsive props](general/responsive-props.md)
 * [Best practices](general/best-practices.md)
 
 ## Components
@@ -22,4 +21,9 @@
 ## Developers
 
 * [Grid areas parsing](developers/grid-areas-parsing.md)
+
+## Fundamentals
+
+* [Breakpoints](fundamentals/breakpoints.md)
+* [Responsive props](fundamentals/responsive-props.md)
 

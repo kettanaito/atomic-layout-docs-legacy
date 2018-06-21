@@ -6,7 +6,7 @@ description: A component responsible for elements composition and spacial distri
 
 ## Props
 
-Supports all the [Responsive props](../general/responsive-props.md).
+Supports all the [Responsive props](../fundamentals/responsive-props.md).
 
 ## Examples
 

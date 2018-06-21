@@ -20,7 +20,7 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 * Standardized, trusted, production-ready,
 * Build insanely flexible layouts via CSS Grid,
-* Decrease CSS boilerplate with [Responsive props](general/responsive-props.md),
+* Decrease CSS boilerplate with [Responsive props](fundamentals/responsive-props.md),
 * Keep your composites immutable,
 * **Just 5.6 Kb gzipped!**
 
