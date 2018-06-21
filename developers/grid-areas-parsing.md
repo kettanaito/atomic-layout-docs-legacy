@@ -40,6 +40,10 @@ const templateTablet = `
     tempalteMd={templateTablet} />
 ```
 
+```javascript
+getAreasList(Composition.props) // consider <Composition/> above
+```
+
 Returns:
 
 ```javascript
@@ -82,7 +86,7 @@ type TAreaComponentsMap = {
 ### Example
 
 ```jsx
-const componentsMap = getComponents(areasList) // consider "areasList" from the previous step
+getComponents(areasList) // consider "areasList" from the previous step
 ```
 
 Returns:
