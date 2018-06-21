@@ -4,7 +4,7 @@ description: Applies global layout configuration.
 
 # configure\(\)
 
-
+## Acknowledgement
 
 {% hint style="danger" %}
 **Configure layout once**, on the root level of your application, to ensure its consistency.
@@ -32,6 +32,8 @@ Layout.configure({
 ```
 
 ### `breakpoints`
+
+A set of [breakpoints](../../fundamentals/breakpoints.md) used in the layout composition.
 
 | Type | `TBreakpoints` |
 | --- | --- | --- |
