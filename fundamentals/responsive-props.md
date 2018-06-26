@@ -23,7 +23,7 @@ Atomic layout is mobile-first. That means that all responsive properties are app
 ## Default statements
 
 * Default breakpoint behavior is `up`,
-* Default measurement unit for numeric prop values is `rem`,
+* Default measurement unit for numeric prop values is `px`,
 * When not suffixed, any prop value is applied for `xs` screen size and `up`.
 
 ## Props
