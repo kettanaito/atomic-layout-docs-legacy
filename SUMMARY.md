@@ -21,6 +21,7 @@
 ## Developers
 
 * [Grid areas parsing](developers/grid-areas-parsing.md)
+* [Contributing](developers/contributing.md)
 
 ## Fundamentals
 
