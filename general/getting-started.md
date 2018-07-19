@@ -22,7 +22,7 @@ npm install atomic-layout --save
 ```jsx
 import React from 'react'
 // include the library
-import { Layout } from 'atomic-layout'
+import { Composition } from 'atomic-layout'
 import CardThumbnail from './CardThumbnail'
 import CardContent from './CardContent'
 import CardFooter form './CartFooter'
@@ -40,10 +40,10 @@ const tabletLayout = `
 `
 
 const Card = ({ image, text, actions }) => (
-    <Layout
+    <Composition
         template={mobileLayout}
-        gutter={1}
         templateMd={tabletLayout}
+        gutter={1}
         gutterMd={2}>
         // Access all layout areas as React components
         {({ Thumbnail, Content, Footer }) => (
@@ -61,7 +61,7 @@ const Card = ({ image, text, actions }) => (
                 </Footer>
             </React.Fragment>
         )}
-    </Layout>
+    </Composition>
 )
 
 export default Card
