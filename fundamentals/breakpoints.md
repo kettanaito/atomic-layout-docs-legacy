@@ -1,5 +1,9 @@
 # Breakpoints
 
+## Introduction
+
+Atomic layout supports responsive design.
+
 ## Breakpoint
 
 > Breakpoint is a condition that describes a breaking point of layout acquiring next state.
@@ -23,13 +27,27 @@ You can use the following properties to describe a breakpoint in Atomic layout:
 
 ## Default breakpoints
 
-We are using [Bootstrap 4 Grid breakpoints](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options) as default breakpoints:
+[Bootstrap 4 Grid breakpoints](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options) are used as default breakpoints:
 
 | **Breakpoint name** | **xs \(default\)** | **sm** | **md** | **lg** | **xl** |
 | --- | --- |
-| **Screen size** | &lt;576px | ≥576px | ≥768px | ≥992px | ≥1200px |
+| **Screen width** | &lt;576px | ≥576px | ≥768px | ≥992px | ≥1200px |
 
-## Custom breakpoints
+## Configuration
+
+Each project has unique requirements. Although 
+
+Although we provide sensible default configurations for breakpoints, 
+
+### Custom breakpoints
+
+...
+
+### Default breakpoint
+
+> Default: "xs"
+
+...
 
 You can [configure custom breakpoints](../api/layout/configure.md#breakpoints) suitable for your requirements. See the API documentation for more information and examples.
 
