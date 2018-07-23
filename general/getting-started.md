@@ -2,13 +2,13 @@
 
 ## Pre-requisites
 
-Please make sure you have the following peer dependencies installed in your project:
+Atomic layout requires the following peer dependencies to work. Make sure to have them installed in your project, as they don't come built into library.
 
 * [React](https://github.com/facebook/react) \(15.0+\)
 * [styled-components](https://github.com/styled-components/styled-components) \(3.0+\)
 
 {% hint style="info" %}
-Although Atomic layout is a paradigm, the current implementation uses the aforementioned  dependencies. Submit a [Pull request](https://github.com/kettanaito/atomic-layout/pulls) to bring Atomic layout to your favorite environment.
+Although Atomic layout is a paradigm, the current implementation uses the aforementioned  dependencies. Submit a [Pull request](https://github.com/kettanaito/atomic-layout/pulls) to bring Atomic layout to your favorite framework.
 {% endhint %}
 
 ## Install
@@ -68,7 +68,7 @@ export default Card
 ```
 
 {% hint style="info" %}
-Note that you can **nest** another compositions inside those grid areas \(`<Thumbnail/>`, `<Content/>`, `<Footer/>`\) to create astonishing layouts.
+We encourage [Nested composition](../components/composition.md#nested-composition) to create astonishing layouts.
 {% endhint %}
 
 ## Materials

@@ -30,9 +30,5 @@ Atomic layout principle encourages **nested** **composition**. That implies that
 
 ![Atomic layout visualization.](../.gitbook/assets/atomic-layout%20%282%29.png)
 
-{% hint style="info" %}
-Nested composition is a core difference between Atomic layout and conventional grid systems.
-{% endhint %}
-
-You can still build containers and grids, which will _complement_ the composition instead of supervising it.
+You can build containers and grids, which will _complement_ the composition instead of supervising it.
 
