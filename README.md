@@ -1,5 +1,5 @@
 ---
-description: A single component to distribute spacial relation in your layouts.
+description: A single component to distribute a spacial relation in your layouts.
 ---
 
 # Atomic layout
@@ -19,16 +19,16 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 ## Advantages
 
 * Standardized, trusted, production-ready,
-* Build insanely flexible layouts via CSS Grid,
-* Decrease CSS boilerplate with [Responsive props](fundamentals/responsive-props.md),
-* Keep your composites immutable,
-* **Just 5.6 Kb gzipped!**
+* Flexible layouts via CSS Grid without writing actual CSS,
+* Use [Responsive props](fundamentals/responsive-props.md) to create responsive layouts in a few lines,
+* Immutable layout composites,
+* **~6 Kb gzipped!**
 
 ## Disadvantages
 
-* No IE support prior to version 11 \(See [CSS Grid support table](https://caniuse.com/#feat=css-grid)\)
+* No Internet Explorer support prior to version 11 \(See [CSS Grid support table](https://caniuse.com/#feat=css-grid)\)
 
 ## How does it work?
 
-Atomic layout is based on standardized [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) feature. During the layout composition you define which layout areas are present at the given screen size\(s\) and render your components in those areas.
+Atomic layout is based on standardized [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). During the layout composition you define which layout areas are present at the given screen size\(s\) and render your components in those areas.
 
