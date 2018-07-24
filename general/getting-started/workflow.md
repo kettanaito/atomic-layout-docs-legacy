@@ -31,6 +31,7 @@ const Composition = require('atomic-layout').Composition
 The next step is to think of what layout areas current composition acquires.
 
 ```jsx
+import React from 'react'
 import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
@@ -57,6 +58,7 @@ Use `grid-template-areas` syntax when declaring grid areas. Notice the explicit 
 Areas declaration alone will not do anything, we need to pass those areas as a value of the `template` prop of our `Composition` component:
 
 ```jsx
+import React from 'react'
 import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
@@ -92,6 +94,7 @@ Notice how we appended an `md` suffix in `templateMd`. `md` there refers to a br
 `Composition` component expects a function as its children. That function exposes areas components based on the given `template` values.
 
 ```jsx
+import React from 'react'
 import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices

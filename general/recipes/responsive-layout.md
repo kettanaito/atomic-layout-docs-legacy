@@ -34,6 +34,7 @@ We have two template declarations above—one for mobile and one for desktop scr
 Having different areas in different template declarations only signifies conditional areas. In order to control the breakpoints where those areas must be rendered, we need to pass templates declarations to the `template` props of the `Composition` component:
 
 ```jsx
+import React from 'react'
 import { Composition } from 'atomic-layout'
 
 const templateMobile = `

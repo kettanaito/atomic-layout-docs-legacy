@@ -10,6 +10,8 @@ Supports all the [Responsive props](../fundamentals/responsive-props.md), **exce
 
 ## Example
 
+{% code-tabs %}
+{% code-tabs-item title="src/components/Header.jsx" %}
 ```jsx
 import { Box } from 'atomic-layout'
 
@@ -21,6 +23,8 @@ const Header = () => (
 
 export default Header
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 {% hint style="warning" %}
 Box has no control over composition. Use [Composition](composition.md) component when such is needed.

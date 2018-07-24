@@ -21,17 +21,26 @@ Layout is meant to be configured **only once**, on the root level of your applic
 
 #### Example
 
+{% code-tabs %}
+{% code-tabs-item title="src/App.jsx" %}
 ```jsx
-import Layout, { Composition } from 'atomic-layout'
+impor
+t Layout, { Composition } from 'atomic-layout'
 
 Layout.configure({
     defaultUnit: 'rem',
 })
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition gutter={2} /> // reads as "2rem" of "gutter"
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### `defaultBehavior`
 
@@ -42,6 +51,8 @@ Layout.configure({
 
 #### Example
 
+{% code-tabs %}
+{% code-tabs-item title="src/App.jsx" %}
 ```jsx
 import Layout, { Composition } from 'atomic-layout'
 
@@ -49,12 +60,18 @@ Layout.configure({
     defaultBehavior: 'down',
 })
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
     template={...}
     templateMd={...} />
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Template prop value is applied for `md` breakpoint and _down_, as contrary to the default, mobile-first behavior, which applies the value from the given breakpoint and _up_.
 
@@ -92,6 +109,8 @@ type TBreakpoints = {
 
 #### Example
 
+{% code-tabs %}
+{% code-tabs-item title="src/App.jsx" %}
 ```jsx
 import Layout, { Composition } from 'atomic-layout'
 
@@ -110,13 +129,19 @@ Layout.configure({
     },
 })
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
     templateMobile={...}
     templateTablet={...}
     paddingRetina={10} />
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### `defaultBreakpointName`
 
@@ -127,6 +152,8 @@ Layout.configure({
 
 #### Example
 
+{% code-tabs %}
+{% code-tabs-item title="src/App.jsx" %}
 ```jsx
 import Layout, { Composition } from 'atomic-layout'
 
@@ -142,12 +169,18 @@ Layout.configure({
     },
 })
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
     template={...}
     templateDesktop={...} />
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Breakpoint-less template prop references `mobile` breakpoint, as specified by `defaultBreakpointName`.
 

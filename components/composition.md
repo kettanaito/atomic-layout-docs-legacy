@@ -12,6 +12,8 @@ Supports all the [Responsive props](../fundamentals/responsive-props.md).
 
 ### Simple composition
 
+{% code-tabs %}
+{% code-tabs-item title="src/components/ArtistCard/index.jsx" %}
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
@@ -52,6 +54,8 @@ const ArtistCard = ({ title, imageUrl, description }) => (
 
 export default ArtistCard
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Nested composition
 
