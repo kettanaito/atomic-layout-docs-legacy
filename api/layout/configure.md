@@ -14,7 +14,7 @@ Layout is meant to be configured **only once**, on the root level of your applic
 
 ### `defaultUnit`
 
-| Type | `String` |
+| Value type | `String` |
 | --- | --- | --- |
 | Default value | `px` |
 | Description | Default measurement unit used as a suffix for numeric prop values. |
@@ -27,13 +27,15 @@ import Layout, { Composition } from 'atomic-layout'
 Layout.configure({
     defaultUnit: 'rem',
 })
+```
 
+```jsx
 <Composition gutter={2} /> // reads as "2rem" of "gutter"
 ```
 
 ### `defaultBehavior`
 
-| Type | `up | down | only` |
+| Value type | `up | down | only` |
 | --- | --- | --- |
 | Default value | `up` |
 | Description | Breakpoint behavior used for responsive props without explicit behavior. |
@@ -46,7 +48,9 @@ import Layout, { Composition } from 'atomic-layout'
 Layout.configure({
     defaultBehavior: 'down',
 })
+```
 
+```jsx
 <Composition
     template={...}
     templateMd={...} />
@@ -58,7 +62,7 @@ Template prop value is applied for `md` breakpoint and _down_, as contrary to th
 
 A set of [breakpoints](../../fundamentals/breakpoints.md) used in the layout composition.
 
-| Type | `TBreakpoints` |
+| Value type | `TBreakpoints` |
 | --- | --- | --- |
 | Default value | Bootstrap 4 breakpoints |
 | Description | Map of custom breakpoints. |
@@ -105,7 +109,9 @@ Layout.configure({
         },
     },
 })
+```
 
+```jsx
 <Composition
     templateMobile={...}
     templateTablet={...}
@@ -114,7 +120,7 @@ Layout.configure({
 
 ### `defaultBreakpointName`
 
-| Type | `String` |
+| Value type | `String` |
 | --- | --- | --- |
 | Default value | `"xs"` |
 | Description | The name of a default breakpoint used for the props without an explicit breakpoint name. |
@@ -135,7 +141,9 @@ Layout.configure({
         },
     },
 })
+```
 
+```jsx
 <Composition
     template={...}
     templateDesktop={...} />

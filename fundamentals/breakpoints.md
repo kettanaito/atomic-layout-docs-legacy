@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Atomic layout supports responsive design.
+Atomic layout is built with responsive in mind.
 
 ## Breakpoint
 
@@ -21,8 +21,8 @@ You can use the following properties to describe a breakpoint in Atomic layout:
 | aspectRatio | String | Device screen aspect ratio. |
 | minAspectRatio | String | Minimum aspect ratio of the device. |
 | maxAspectRatio | String | Maximum aspect ratio of the device. |
-| scan | enum: `interlace` \| `progressive` | Scanning process of the device. |
-| orientation | enum: `portrait` \| `landscape` | Device viewport orientation. |
+| scan | `interlace` \| `progressive` | Scanning process of the device. |
+| orientation | `portrait` \| `landscape` | Device viewport orientation. |
 | displayMode | enum: `fullscreen` \| `standalone` \| `minimal-ui` \| `browser` | Display mode of the application specified in the `manifest.json` |
 
 ## Default breakpoints
@@ -35,19 +35,8 @@ You can use the following properties to describe a breakpoint in Atomic layout:
 
 ## Configuration
 
-Each project has unique requirements. Although 
+* [Custom breakpoints](../api/layout/configure.md#breakpoints)
+* [Default breakpoint name](../api/layout/configure.md#defaultbreakpointname)
 
-Although we provide sensible default configurations for breakpoints, 
 
-### Custom breakpoints
-
-...
-
-### Default breakpoint
-
-> Default: "xs"
-
-...
-
-You can [configure custom breakpoints](../api/layout/configure.md#breakpoints) suitable for your requirements. See the API documentation for more information and examples.
 

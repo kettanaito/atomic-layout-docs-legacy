@@ -5,8 +5,11 @@
 ## General
 
 * [Philosophy](general/philosophy.md)
-* [Getting started](general/getting-started.md)
-* [Best practices](general/best-practices.md)
+* [Getting started](general/getting-started/README.md)
+  * [Installation](general/getting-started/installation.md)
+  * [Workflow](general/getting-started/workflow.md)
+* [Recipes](general/recipes/README.md)
+  * [Responsive layout](general/recipes/responsive-layout.md)
 
 ## Components
 

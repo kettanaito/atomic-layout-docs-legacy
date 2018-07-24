@@ -6,9 +6,9 @@ First of all, thank you for deciding to contribute to how developers create layo
 
 Knowledge in the following technologies is highly welcome:
 
-1. [React](https://github.com/facebook/react),
-2. [styled-components](https://github.com/styled-components/styled-components),
-3. [Storybook](https://github.com/storybooks/storybook).
+1. [React](https://github.com/facebook/react)
+2. [styled-components](https://github.com/styled-components/styled-components)
+3. [Storybook](https://github.com/storybooks/storybook)
 
 ## Getting started
 
