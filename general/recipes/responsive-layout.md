@@ -4,7 +4,7 @@
 
 There are two main keys when creating a responsive layout:
 
-1. Having conditional layout areas.
+1. Rendering layout areas conditionally,
 2. Applying props \(`gutter`, `margin`, etc.\) conditionally on certain breakpoints.
 
 ## Responsive areas

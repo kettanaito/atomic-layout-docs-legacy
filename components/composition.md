@@ -1,12 +1,66 @@
 ---
-description: A component responsible for elements composition and spacial distribution.
+description: A component responsible for elements' composition and relation.
 ---
 
 # Composition
 
-## Props
+## Introduction
 
-Supports all the [Responsive props](../fundamentals/responsive-props.md).
+`<Composition/>` is a base component that represents any layout composition. It always expects at least one template string, and any [additional props](../fundamentals/prop-aliases.md).
+
+## Usage
+
+Composition begins by defining a template string that consists of layout \(grid\) areas.
+
+```jsx
+const templateMobile = `
+    'logo'
+    'menu'
+`
+```
+
+> Notice mandatory single quotes wrapping each new line.
+
+Template string uses [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) syntax of CSS Grid, and visually represents the layout areas.
+
+Since Atomic layout comes with responsive behavior built-in, you can define multiple layout templates for a single composition based on the [breakpoints](../fundamentals/breakpoints.md) of your layout.
+
+```jsx
+const templateTablet = `
+    'logo menu'
+    'search'
+`
+```
+
+Once layout templates are defined, pass them as the respective `template` props of the Composition. Each area in the template is turned into a React component and being exposed as an argument property of the children function:
+
+```jsx
+<Composition
+    template={templateMobile}
+    templateMd={templateTablet}>
+    {({ Logo, Search, Menu }) => (
+        <React.Fragment>
+            <Logo>...</Logo>
+            <Search>...</Search>
+            <Menu>...</Menu>
+        </React.Fragment>
+    )}
+</Composition>
+```
+
+> Area components are unique and capitalized by default.
+
+## Configuration
+
+Composition supports additional props to complement its grid behavior. For example, you can specify the behavior of grid columns using the `templateCols` prop:
+
+```jsx
+<Composition
+    template={templateMobile}
+    templateMd={templateTablet}
+    templateCols="1fr auto"
+    templateColsMd="1fr 1fr" />
+```
 
 ## Examples
 

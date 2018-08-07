@@ -11,7 +11,7 @@ Atomic layout is built with responsive in mind.
 You can use the following properties to describe a breakpoint in Atomic layout:
 
 | **Property name** | **Value type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | minWidth | Numeric | Minimum device width. |
 | maxWidth | Numeric | Maximum device width. |
 | minHeight | Numeric | Minimum device height. |
@@ -30,7 +30,7 @@ You can use the following properties to describe a breakpoint in Atomic layout:
 [Bootstrap 4 Grid breakpoints](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options) are used as default breakpoints:
 
 | **Breakpoint name** | **xs \(default\)** | **sm** | **md** | **lg** | **xl** |
-| --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | **Screen width** | &lt;576px | ≥576px | ≥768px | ≥992px | ≥1200px |
 
 ## Configuration

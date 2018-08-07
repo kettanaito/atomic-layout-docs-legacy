@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 
-Atomic layout requires the following peer dependencies to work. Make sure to have them installed in your project, as they don't come built into library.
+Atomic layout requires the following peer dependencies to work. Make sure to have them installed in your project, as they don't come built-in with the library.
 
 * [React](https://github.com/facebook/react) \(15.0+\)
 * [styled-components](https://github.com/styled-components/styled-components) \(3.0+\)

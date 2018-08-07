@@ -15,7 +15,7 @@ Layout is meant to be configured **only once**, on the root level of your applic
 ### `defaultUnit`
 
 | Value type | `String` |
-| --- | --- | --- |
+| :--- | :--- |
 | Default value | `px` |
 | Description | Default measurement unit used as a suffix for numeric prop values. |
 
@@ -45,7 +45,7 @@ Layout.configure({
 ### `defaultBehavior`
 
 | Value type | `up | down | only` |
-| --- | --- | --- |
+| :--- | :--- |
 | Default value | `up` |
 | Description | Breakpoint behavior used for responsive props without explicit behavior. |
 
@@ -80,7 +80,7 @@ Template prop value is applied for `md` breakpoint and _down_, as contrary to th
 A set of [breakpoints](../../fundamentals/breakpoints.md) used in the layout composition.
 
 | Value type | `TBreakpoints` |
-| --- | --- | --- |
+| :--- | :--- |
 | Default value | Bootstrap 4 breakpoints |
 | Description | Map of custom breakpoints. |
 
@@ -146,7 +146,7 @@ Layout.configure({
 ### `defaultBreakpointName`
 
 | Value type | `String` |
-| --- | --- | --- |
+| :--- | :--- |
 | Default value | `"xs"` |
 | Description | The name of a default breakpoint used for the props without an explicit breakpoint name. |
 

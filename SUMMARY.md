@@ -29,5 +29,6 @@
 ## Fundamentals
 
 * [Breakpoints](fundamentals/breakpoints.md)
+* [Prop aliases](fundamentals/prop-aliases.md)
 * [Responsive props](fundamentals/responsive-props.md)
 
