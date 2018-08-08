@@ -2,10 +2,10 @@
 
 ## Introduction
 
-There are two main keys when creating a responsive layout:
+There are two key points when creating a responsive layout:
 
-1. Rendering layout areas conditionally,
-2. Applying props \(`gutter`, `margin`, etc.\) conditionally on certain breakpoints.
+1. Conditional areas rendering,
+2. Conditional props assignment \(`gutter`, `margin`, etc.\).
 
 ## Responsive areas
 

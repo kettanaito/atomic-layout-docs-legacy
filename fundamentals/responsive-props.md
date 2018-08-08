@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Any prop is considered a responsive prop if its name is suffixed with the enlisted breakpoint name and its behavior, if necessary.
+Any prop alias is considered a responsive prop if its name is suffixed with the enlisted breakpoint name and its behavior, if necessary.
 
 ## Declaration
 

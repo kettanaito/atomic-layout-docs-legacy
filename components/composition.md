@@ -1,10 +1,6 @@
----
-description: A component responsible for elements' composition and relation.
----
-
 # Composition
 
-## Introduction
+## Specification
 
 `<Composition/>` is a base component that represents any layout composition. It always expects at least one template string, and any [additional props](../fundamentals/prop-aliases.md).
 
