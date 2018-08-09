@@ -78,8 +78,7 @@ const templateTablet = `
 const Page = () => (
     <Composition
         template={templateMobile}
-        templateMd={templateTablet}
-    >
+        templateMd={templateTablet}>
         {() => (/* See next step */)}
     </Composition>
 )

@@ -30,9 +30,9 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 ## How does it work?
 
-Atomic layout is based on the standardized [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). During the layout composition you define which layout areas are present at the given screen size\(s\) and render your components in those areas.
+Atomic layout is based on the standardized [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). During the layout composition you define which layout areas are present at the desired breakpoint\(s\) and render your components in those areas.
 
-Learn more by following a quick guide:
+**Learn more by going through a quick guide:**
 
 {% page-ref page="general/getting-started/" %}
 

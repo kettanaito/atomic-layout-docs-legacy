@@ -1,9 +1,5 @@
 # Breakpoints
 
-## Introduction
-
-Atomic layout is built with responsive in mind.
-
 ## Breakpoint
 
 Breakpoint is a condition that describes a breaking point of layout acquiring next state.
@@ -35,8 +31,8 @@ You can use the following properties to describe a breakpoint in Atomic layout:
 
 ## Configuration
 
-* [Custom breakpoints](../api/layout/configure.md#breakpoints)
 * [Default breakpoint name](../api/layout/configure.md#defaultbreakpointname)
+* [Custom breakpoints](../api/layout/configure.md#breakpoints)
 
 
 

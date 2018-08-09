@@ -6,9 +6,10 @@ First of all, thank you for deciding to contribute to how developers create layo
 
 Knowledge in the following technologies is highly welcome:
 
-1. [React](https://github.com/facebook/react)
-2. [styled-components](https://github.com/styled-components/styled-components)
-3. [Storybook](https://github.com/storybooks/storybook)
+1. [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+2. [React](https://github.com/facebook/react)
+3. [styled-components](https://github.com/styled-components/styled-components)
+4. [Storybook](https://github.com/storybooks/storybook)
 
 ## Getting started
 
@@ -18,7 +19,7 @@ Knowledge in the following technologies is highly welcome:
 2. Checkout the forked directory,
 3. Install dependencies via `npm install`
 
-### 1. Create a feature branch
+### 1. Create a feature/bugfix branch
 
 ```bash
 git checkout -b {ISSUE_NUMBER}-{BRANCH_NAME}
@@ -64,6 +65,6 @@ git rebase {TARGET_BRANCH}
 1. Go to [https://github.com/kettanaito/atomic-layout/compare](https://github.com/kettanaito/atomic-layout/compare),
 2. Select the feature branch from your fork and the target branch from Atomic layout,
 3. Fill in the pull request template with patience,
-4. Undergo code review,
+4. Undergo a code review,
 5. Witness your changes in the repository!
 

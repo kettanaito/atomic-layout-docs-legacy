@@ -24,8 +24,7 @@ Layout is meant to be configured **only once**, on the root level of your applic
 {% code-tabs %}
 {% code-tabs-item title="src/App.jsx" %}
 ```jsx
-impor
-t Layout, { Composition } from 'atomic-layout'
+import Layout from 'atomic-layout'
 
 Layout.configure({
     defaultUnit: 'rem',
@@ -112,7 +111,7 @@ type TBreakpoints = {
 {% code-tabs %}
 {% code-tabs-item title="src/App.jsx" %}
 ```jsx
-import Layout, { Composition } from 'atomic-layout'
+import Layout from 'atomic-layout'
 
 Layout.configure({
     breakpoints: {
@@ -155,7 +154,7 @@ Layout.configure({
 {% code-tabs %}
 {% code-tabs-item title="src/App.jsx" %}
 ```jsx
-import Layout, { Composition } from 'atomic-layout'
+import Layout from 'atomic-layout'
 
 Layout.configure({
     defaultBreakpointName: 'mobile',
