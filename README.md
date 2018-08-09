@@ -18,10 +18,10 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 ## Advantages
 
-* Standardized, trusted, production-ready,
+* Standardized technology supported in **more than 85%** of browsers around the glob,
 * Flexible layouts via CSS Grid without writing actual CSS,
-* Use [Responsive props](fundamentals/responsive-props.md) to create responsive layouts in a few lines,
-* Immutable layout composites,
+* Use [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast,
+* Keep layout composites immutable and predictable,
 * **~6 Kb gzipped!**
 
 ## Disadvantages
