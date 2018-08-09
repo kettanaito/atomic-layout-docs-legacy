@@ -6,6 +6,12 @@
 
 ## Usage
 
+First, import the `Composition` component from the library:
+
+```jsx
+import { Composition } from 'atomic-layout'
+```
+
 Composition begins by defining a template string that consists of layout \(grid\) areas.
 
 ```jsx
