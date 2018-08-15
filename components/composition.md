@@ -16,12 +16,10 @@ Composition begins by defining a template string that consists of layout \(grid\
 
 ```jsx
 const templateMobile = `
-    'logo'
-    'menu'
+    logo
+    menu
 `
 ```
-
-> Notice mandatory single quotes wrapping each new line.
 
 Template string uses [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) syntax of CSS Grid, and visually represents the layout areas.
 
@@ -29,8 +27,8 @@ Since Atomic layout comes with responsive behavior built-in, you can define mult
 
 ```jsx
 const templateTablet = `
-    'logo menu'
-    'search'
+    logo menu
+    search
 `
 ```
 
@@ -75,14 +73,14 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 
 const mobileTemplate = `
-    'thumbnail'
-    'heading'
-    'content'
+    thumbnail
+    heading
+    content
 `
 
 const desktopTemplate = `
-    'thumbnail heading'
-    'thumbnail content'
+    thumbnail heading
+    thumbnail content
 `
 
 const ArtistCard = ({ title, imageUrl, description }) => (
@@ -123,13 +121,13 @@ import { Composition } from 'atomic-layout'
 import ArtistContent from './ArtistContent'
 
 const mobileTemplate = `
-    'thumbnail'
-    'content'
+    thumbnail
+    content
 `
 
 const desktopTemplate = `
-    'thumbnail content'
-    'thumbnail content'
+    thumbnail content
+    thumbnail content
 `
 
 const ArtistCard = ({ title, description, publishDate, imageUrl }) => (
@@ -162,14 +160,14 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 
 const mobileTemplate = `
-    'meta'
-    'actions'
-    'text'
+    meta
+    actions
+    text
 `
 
 const desktopTemplate = `
-    'meta actions'
-    'text text'
+    meta actions
+    text text
 `
 
 const ArtistContent = ({ description, publishDate, onShareClick }) => (

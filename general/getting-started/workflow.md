@@ -36,16 +36,16 @@ import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
 const templateMobile = `
-    'header'
-    'content'
-    'footer'
+    header
+    content
+    footer
 `
 
 // grid areas on tablets
 const templateTablet = `
-    'header'
-    'content aside'
-    'footer'
+    header header
+    content aside
+    footer footer
 `
 ```
 
@@ -63,16 +63,16 @@ import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
 const templateMobile = `
-    'header'
-    'content'
-    'footer'
+    header
+    content
+    footer
 `
 
 // grid areas on tablets
 const templateTablet = `
-    'header'
-    'content aside'
-    'footer'
+    header header
+    content aside'
+    footer footer
 `
 
 const Page = () => (
@@ -98,16 +98,16 @@ import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
 const templateMobile = `
-    'header'
-    'content'
-    'footer'
+    header
+    content
+    footer
 `
 
 // grid areas on tablets
 const templateTablet = `
-    'header'
-    'content aside'
-    'footer'
+    header header
+    content aside
+    footer footer
 `
 
 const Page = () => (

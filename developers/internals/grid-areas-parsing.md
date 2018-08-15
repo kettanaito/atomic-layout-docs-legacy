@@ -35,12 +35,12 @@ First step is getting the array of unique grid area names, their breakpoint and 
 import { Composition } from 'atomic-layout'
 
 const tempalte = `
-    'first second'
+    first second
 `
 
 const templateTablet = `
-    'first second'
-    'first third'
+    first second
+    first third
 `
 
 <Composition
