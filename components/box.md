@@ -5,21 +5,22 @@
 Box is a primitive component responsible for spacial distribution.
 
 {% hint style="warning" %}
-Box has no control over composition. Use [Composition](composition.md) component instead.
+Box has no control over layout composition. Use [Composition](composition.md) component instead.
 {% endhint %}
 
 ## Props
 
-Supports all [Prop aliases](../fundamentals/prop-aliases.md), **except** the grid-specific ones.
+Box supports all [Prop aliases](../fundamentals/prop-aliases.md), **except** those specific to CSS Grid.
 
 ## Example
 
 ```jsx
+import React from 'react'
 import { Box } from 'atomic-layout'
 
-const Header = () => (
-    <Box paddingVertical={1} paddingVerticalMd={2}>
-        <Children />
+const Header = ({ children }) => (
+    <Box paddingVertical="10" paddingVerticalMd="20">
+        {children}
     </Box>
 )
 

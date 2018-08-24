@@ -52,7 +52,7 @@ Once layout templates are defined, pass them as the respective `template` props 
 
 ## Configuration
 
-Composition supports additional props to complement its grid behavior. For example, you can specify the behavior of grid columns using the `templateCols` prop:
+Composition supports additional props to complement its behavior. For example, you can specify the behavior of grid columns using the `templateCols` prop:
 
 ```jsx
 <Composition
@@ -130,7 +130,13 @@ const desktopTemplate = `
     thumbnail content
 `
 
-const ArtistCard = ({ title, description, publishDate, imageUrl }) => (
+const ArtistCard = ({
+    title,
+    description,
+    publishDate,
+    imageUrl,
+    onShareClick
+}) => (
     <Composition template={mobileTemplate}>
         {({ Thumbnail, Content }) => (
             <React.Fragment>
@@ -141,7 +147,7 @@ const ArtistCard = ({ title, description, publishDate, imageUrl }) => (
                     <ArtistContent
                         description={description}
                         publishDate={publishDate}
-                        onShareClick={() => console.log('foo')} />
+                        onShareClick={onShareClick} />
                 </Content>
             </React.Fragment>
         )}
@@ -174,8 +180,8 @@ const ArtistContent = ({ description, publishDate, onShareClick }) => (
     <Composition
         template={mobileTemplate}
         templateMd={desktopTemplate}
-        gutter={1}
-        gutterMd={1.5}>
+        gutter="10"
+        gutterMd="15">
         {({ Meta, Actions, Text }) => (
             <React.Fragment>
                 <Meta>

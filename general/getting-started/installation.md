@@ -1,6 +1,6 @@
 # Installation
 
-## Pre-requisites
+## Peer dependencies
 
 Atomic layout requires the following peer dependencies to work. Make sure to have them installed in your project, as they don't come built-in with the library.
 

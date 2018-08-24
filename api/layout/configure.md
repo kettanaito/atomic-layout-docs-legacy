@@ -7,7 +7,7 @@ description: Applies global layout configuration.
 ## Acknowledgement
 
 {% hint style="danger" %}
-Layout is meant to be configured **only once**, on the root level of your application.
+Layout is meant to be configured **once**, on the root level of your application.
 {% endhint %}
 
 ## Options

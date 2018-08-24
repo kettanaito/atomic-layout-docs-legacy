@@ -51,7 +51,7 @@ export default Card
 ```
 
 {% hint style="info" %}
-We encourage [Nested composition](../../components/composition.md#nested-composition) to create astonishing layouts.
+Consider [Nested composition](../../components/composition.md#nested-composition) to create truly astonishing layouts.
 {% endhint %}
 
 ## Materials

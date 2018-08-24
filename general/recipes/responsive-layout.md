@@ -11,7 +11,7 @@ There are two key points when creating a responsive layout:
 
 ### Declaration
 
-Any grid area that is not present on all template declarations becomes responsive.
+Any grid area that is not present in all template declarations automatically becomes responsive.
 
 ```jsx
 const templateMobile = `
@@ -27,7 +27,11 @@ const templateDesktop = `
 `
 ```
 
-We have two template declarations above—one for mobile and one for desktop screens. Areas `thumbnail`, `heading` and `subheading` are present in both template declarations. However, the `meta` grid area is declared in `templateDesktop` only. This makes `meta` a responsive area.
+We have two template declarations above—one for mobile and one for desktop screens. Areas `thumbnail`, `heading` and `subheading` are present in both template declarations. However, the `meta`  area is declared in `templateDesktop` only. This makes `meta` a responsive area.
+
+{% hint style="info" %}
+Note that template declaration alone has no effect over responsive area rendering. Make sure to supply the template declaration to the respective template prop.
+{% endhint %}
 
 ### Breakpoints
 
@@ -38,15 +42,15 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 
 const templateMobile = `
-    'thumbnail'
-    'heading'
-    'subheading'
+    thumbnail
+    heading
+    subheading
 `
 
 const templateDesktop = `
-    'thumbnail heading'
-    'thumbnail subheading'
-    'thumbnail meta'
+    thumbnail heading
+    thumbnail subheading
+    thumbnail meta
 `
 
 const Card = () => (
@@ -67,13 +71,17 @@ const Card = () => (
 export default Card
 ```
 
-The composition above will wrap `Meta` grid area in a `<MediaQuery/>` component from [react-responsive](https://github.com/contra/react-responsive), ensuring that it is rendered on `lg` breakpoint and up \(default breakpoint behavior\).
+The composition above will wrap `Meta` grid area in a `<MediaQuery/>` component from [react-responsive](https://github.com/contra/react-responsive). This area will render on `lg` breakpoint and up, because there is no succeeding template declaration that would contradict that, and because "up" is the default responsive behavior.
 
 ## Responsive props
 
 Any prop name suffixed with a breakpoint name is a responsive prop. It implies that the prop's value will be applied on the given breakpoint.
 
-We have already used a responsive prop in the example above. By suffixing `template` with the `lg`, we stated that the given value must be applied on the `lg` breakpoint and up. Following this example, let's create a different gutter between the grid areas on different breakpoints:
+{% hint style="info" %}
+Read a more in-depth explanation about [Responsive props](../../fundamentals/responsive-props.md).
+{% endhint %}
+
+We have already used a responsive prop in the example above. By suffixing `template` with the `Lg`, we stated that the given value must be applied on the `lg` breakpoint and up. Following this example, let's create a different gutter between the grid areas on different breakpoints:
 
 ```jsx
 <Composition

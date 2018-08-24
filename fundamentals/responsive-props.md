@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Any prop alias is considered a responsive prop if its name is suffixed with the enlisted breakpoint name and its behavior, if necessary.
+Any prop alias is considered a responsive prop when its name is suffixed with a breakpoint name. Responsive props may also have an optional behavior specified.
 
 ## Declaration
 
@@ -12,7 +12,7 @@ To declare a responsive prop follow the next schema:
 
 ### **Prop name**
 
-Any of [prop aliases](prop-aliases.md) can be used as a prop name part of a responsive prop.
+Any of [Prop aliases](prop-aliases.md) can be used as a prop name part of a responsive prop.
 
 ### Breakpoint name
 

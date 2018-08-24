@@ -1,10 +1,10 @@
 # Contributing
 
-First of all, thank you for deciding to contribute to how developers create layouts! Follow these straightforward instructions below to get started with shipping your code to Atomic layout.
+First of all, thank you for deciding to contribute to how developers create layouts! Follow these straightforward instructions below to get started, and see each other in pull request review!
 
 ## Pre-requisites
 
-Knowledge in the following technologies is highly welcome:
+You will have much more confidence and meaningful contributions being familiar with the following technologies:
 
 1. [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 2. [React](https://github.com/facebook/react)
@@ -49,16 +49,14 @@ This launches `webpack-dev-server` in watch mode to bundle the library upon any 
 git commit -am 'Introduces ABC'
 ```
 
-### 4. Rebase the feature branch
+### 4. Keep your branch up-to-date
 
 ```bash
 git checkout {TARGET_BRANCH}
-git pull --rebase
+git pull
 git checkout {FEATURE_BRANCH}
-git rebase {TARGET_BRANCH}
+git merge {TARGET_BRANCH}
 ```
-
-> Atomic layout is following rebase merge strategy. **Do not** use `git merge`.
 
 ### 5. Create a pull request
 
