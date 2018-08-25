@@ -4,7 +4,7 @@
 
 Starting with a new technology may be challenging. We are working hard to make this process as smooth as possible, letting you enjoy the benefits of Atomic layout in your projects. Our goal is not to make you a pro user of a library, but a professional experienced in engineering layouts in general.
 
-This section alone contains a high-level overview of topics to get familiar with. Bookmark it and begin your journey into the future of web layouts.
+This section alone contains a high-level overview of topics to get started with Atomic layout. Bookmark it and let your journey into the future of web layouts begin.
 
 ## Roadmap
 
@@ -18,13 +18,13 @@ Atomic layout is based entirely on CSS Grid, thus making your experience with it
 
 ### Workflow
 
-Creating layouts demands a certain workflow.
+Creating layouts demands a certain workflow. Read through the example-base guide to how workflow with Atomic layout feels like: 
 
 {% page-ref page="workflow.md" %}
 
 ### Fundamentals
 
-Now is a good time to learn some pillars of Atomic layout. Get familiar with breakpoints, prop aliases and responsive props—features which are maintained by the library.
+Now is a good time to learn some pillars of Atomic layout. Get familiar with breakpoints, prop aliases and responsive props—features which are provided by the library.
 
 {% page-ref page="../../fundamentals/breakpoints.md" %}
 
