@@ -20,21 +20,23 @@ Atomic layout is based entirely on CSS Grid, thus making your experience with it
 
 Creating layouts demands a certain workflow.
 
-* **Read about the** [**Workflow**](workflow.md)\*\*\*\*
+{% page-ref page="workflow.md" %}
 
 ### Fundamentals
 
 Now is a good time to learn some pillars of Atomic layout. Get familiar with breakpoints, prop aliases and responsive props—features which are maintained by the library.
 
-* **Read about** [**Breakpoints**](../../fundamentals/breakpoints.md)\*\*\*\*
-* **Read about** [**Prop aliases**](../../fundamentals/prop-aliases.md)\*\*\*\*
-* **Read about** [**Responsive props**](../../fundamentals/responsive-props.md)\*\*\*\*
+{% page-ref page="../../fundamentals/breakpoints.md" %}
+
+{% page-ref page="../../fundamentals/prop-aliases.md" %}
+
+{% page-ref page="../../fundamentals/responsive-props.md" %}
 
 ### Best practices
 
 After you have given it a solid round of practice, it is good to see how others utilize Atomic layout at its best. We have prepared a set of hand-picked advices and patterns to bring your layouts to the next level.
 
-* **See** [**Best practices**](../recipes/)\*\*\*\*
+{% page-ref page="../recipes/" %}
 
 {% hint style="info" %}
 Got a suggestion to improve this guide? Please [create an issue](https://github.com/kettanaito/atomic-layout/issues) immediately!
