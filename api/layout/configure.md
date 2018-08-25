@@ -1,10 +1,8 @@
----
-description: Applies global layout configuration.
----
-
 # configure\(\)
 
-## Acknowledgement
+## Specification
+
+Applies global layout configuration.
 
 {% hint style="danger" %}
 Layout is meant to be configured **once**, on the root level of your application.
@@ -36,7 +34,7 @@ Layout.configure({
 {% code-tabs %}
 {% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
-<Composition gutter={2} /> // reads as "2rem" of "gutter"
+<Composition gutter={2} /> // reads as "2rem" of "grid-gap"
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -53,7 +51,7 @@ Layout.configure({
 {% code-tabs %}
 {% code-tabs-item title="src/App.jsx" %}
 ```jsx
-import Layout, { Composition } from 'atomic-layout'
+import Layout from 'atomic-layout'
 
 Layout.configure({
     defaultBehavior: 'down',
@@ -76,12 +74,10 @@ Template prop value is applied for `md` breakpoint and _down_, as contrary to th
 
 ### `breakpoints`
 
-A set of [breakpoints](../../fundamentals/breakpoints.md) used in the layout composition.
-
 | Value type | `TBreakpoints` |
 | :--- | :--- |
 | Default value | Bootstrap 4 breakpoints |
-| Description | Map of custom breakpoints. |
+| Description | A map of custom [breakpoints](../../fundamentals/breakpoints.md). |
 
 #### Type definition
 
@@ -142,6 +138,10 @@ Layout.configure({
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+{% hint style="warning" %}
+Make sure to explicitly provide a [default breakpoint name](configure.md#defaultbreakpointname) when using custom breakpoints.
+{% endhint %}
+
 ### `defaultBreakpointName`
 
 | Value type | `String` |
@@ -181,5 +181,5 @@ Layout.configure({
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Breakpoint-less template prop references `mobile` breakpoint, as specified by `defaultBreakpointName`.
+Breakpoint-less template prop now references `mobile` breakpoint.
 

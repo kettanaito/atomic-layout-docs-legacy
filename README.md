@@ -12,16 +12,17 @@ description: A single component to distribute a spacial relation in your layouts
 
 Think of how you create layouts today. You most likely have a set of reusable units \(atoms\) so you can combine them into functional compositions. Units are simple and predictable, but once they become composites for layouts they acquire contextual spacing and positioning. So you apply additional CSS rules to them to ensure that behavior. That makes units **contextual**, thus not predictable \(and also makes you write more CSS, nobody likes that\).
 
-Atomic layout exposes you a separate layer responsible for the spacial distribution between layout composites. In plain words, it allows you to set spacing and position of layout units **without mutating them**. That deprives from writing redundant CSS and ensures units being predictable.
+Atomic layout exposes you a separate layer responsible for the spacial distribution between layout composites. Put simply, it allows you to set spacing and position of layout units **without mutating them**. That deprives from writing redundant CSS and ensures unit's predictability.
 
 {% page-ref page="general/philosophy.md" %}
 
 ## Advantages
 
-* Standardized technology supported in **more than 85%** of browsers around the glob,
-* Flexible layouts via CSS Grid without writing actual CSS,
-* Use [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast,
-* Keep layout composites immutable and predictable,
+* Based on standardized CSS Grid. No hacks or polyfills,
+* Supported in **more than 85%** of browsers around the glob,
+* Flexible responsive layouts without writing actual CSS,
+* [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast,
+* Helps to keep layout composites immutable and predictable,
 * **~6 Kb gzipped!**
 
 ## Disadvantages

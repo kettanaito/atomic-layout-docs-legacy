@@ -6,11 +6,15 @@
 
 ## Usage
 
+### Import the component
+
 First, import the `Composition` component from the library:
 
 ```jsx
 import { Composition } from 'atomic-layout'
 ```
+
+### Define template strings
 
 Composition begins by defining a template string that consists of layout \(grid\) areas.
 
@@ -32,6 +36,8 @@ const templateTablet = `
 `
 ```
 
+### Render Composition
+
 Once layout templates are defined, pass them as the respective `template` props of the Composition. Each area in the template is turned into a React component and being exposed as an argument property of the children function:
 
 ```jsx
@@ -48,11 +54,11 @@ Once layout templates are defined, pass them as the respective `template` props 
 </Composition>
 ```
 
-> Area components are unique and capitalized by default.
+> Area components are exposed as unique and capitalized keys based on your template definitions.
 
 ## Configuration
 
-Composition supports additional props to complement its behavior. For example, you can specify the behavior of grid columns using the `templateCols` prop:
+Composition is meant to be configurable. There is a set of [Prop aliases](../fundamentals/prop-aliases.md) you can apply to make composition suit your needs. For example, we can specify a `templateCols` prop to control the behavior of our columns on different breakpoints:
 
 ```jsx
 <Composition

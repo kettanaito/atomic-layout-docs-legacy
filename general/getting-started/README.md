@@ -1,65 +1,42 @@
 # Getting started
 
-## Use
+## Foreword
 
-```jsx
-import React from 'react'
-// include the library
-import { Composition } from 'atomic-layout'
-import CardThumbnail from './CardThumbnail'
-import CardContent from './CardContent'
-import CardFooter form './CartFooter'
+Starting with a new technology may be challenging. We are working hard to make this process as smooth as possible, letting you enjoy the benefits of Atomic layout in your projects. Our goal is not to make you a pro user of a library, but a professional experienced in engineering layouts in general.
 
-// declare layouts for different breakpoints
-const mobileLayout = `
-    'thumbnail'
-    'content'
-    'footer'
-`
+This section alone contains a high-level overview of topics to get familiar with. Bookmark it and begin your journey into the future of web layouts.
 
-const tabletLayout = `
-    'thumbnail content'
-    'thumbnail footer'
-`
+## Roadmap
 
-const Card = ({ image, text, actions }) => (
-    <Composition
-        template={mobileLayout}
-        templateMd={tabletLayout}
-        gutter={1}
-        gutterMd={2}>
-        // Access all layout areas as React components
-        {({ Thumbnail, Content, Footer }) => (
-            <React.Fragment>
-                // Treat them like non-contextual areas
-                <Thumbnail rowMd="span 2">
-                    // Render what's intended
-                    <CartThumbnail image={image} />
-                </Thumbnail>
-                <Content>
-                    <CardContent text={text} />
-                </Content>
-                <Footer>
-                    <CardFooter actions={actions} />
-                </Footer>
-            </React.Fragment>
-        )}
-    </Composition>
-)
+### CSS Grid
 
-export default Card
-```
+Atomic layout is based entirely on CSS Grid, thus making your experience with it a crucial part of experience acquired from the library itself. Worry not, we have prepared a set of incredible resources to get you familiar with what CSS Grid is and how to use it. Please, give it a read, as it is a remarkable technology on its own.
+
+* \*\*\*\*[**Introduction into CSS Grid \(MDN\)**](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)\*\*\*\*
+* \*\*\*\*[**CSS Grid vs Flexbox \(Medium\)**](https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf)\*\*\*\*
+* \*\*\*\*[**CSS Grid Visual Cheatsheet**](http://grid.malven.co)\*\*\*\*
+
+### Workflow
+
+Creating layouts demands a certain workflow.
+
+* **Read about the** [**Workflow**](workflow.md)\*\*\*\*
+
+### Fundamentals
+
+Now is a good time to learn some pillars of Atomic layout. Get familiar with breakpoints, prop aliases and responsive props—features which are maintained by the library.
+
+* **Read about** [**Breakpoints**](../../fundamentals/breakpoints.md)\*\*\*\*
+* **Read about** [**Prop aliases**](../../fundamentals/prop-aliases.md)\*\*\*\*
+* **Read about** [**Responsive props**](../../fundamentals/responsive-props.md)\*\*\*\*
+
+### Best practices
+
+After you have given it a solid round of practice, it is good to see how others utilize Atomic layout at its best. We have prepared a set of hand-picked advices and patterns to bring your layouts to the next level.
+
+* **See** [**Best practices**](../recipes/)\*\*\*\*
 
 {% hint style="info" %}
-Consider [Nested composition](../../components/composition.md#nested-composition) to create truly astonishing layouts.
+Got a suggestion to improve this guide? Please [create an issue](https://github.com/kettanaito/atomic-layout/issues) immediately!
 {% endhint %}
-
-## Materials
-
-* [Configure the layout](../../api/layout/configure.md) to create powerful developer and user experience,
-* Read more on Components to know how to handle your use case,
-* Learn how to create truly responsive layouts with [Responsive props](../../fundamentals/responsive-props.md),
-* See [Best practices](../recipes/) to bring your layouts to the next level.
-
-
 

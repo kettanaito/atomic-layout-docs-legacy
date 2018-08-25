@@ -1,11 +1,9 @@
 # Philosophy
 
-## Introduction
-
-Atomic layout is an implementational paradigm based on Atomic design, which aims to simplify and standardize any layout composition using flexible primitives.
+Atomic layout is an implementational paradigm that is heavily influenced by Atomic design, which aims to simplify and standardize any layout composition using flexible primitives.
 
 {% hint style="info" %}
-If you are unfamiliar with [Atomic design](http://bradfrost.com/blog/post/atomic-web-design), take a minute to read through it.
+If you are unfamiliar with [Atomic design](http://bradfrost.com/blog/post/atomic-web-design), take a minute to read through it. Thank us later.
 {% endhint %}
 
 ## Motivation
