@@ -71,7 +71,7 @@ const templateMobile = `
 // grid areas on tablets
 const templateTablet = `
     header header
-    content aside'
+    content aside
     footer footer
 `
 

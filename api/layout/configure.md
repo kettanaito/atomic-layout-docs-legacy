@@ -4,7 +4,7 @@
 
 Applies global layout configuration.
 
-{% hint style="danger" %}
+{% hint style="success" %}
 Layout is meant to be configured **once**, on the root level of your application.
 {% endhint %}
 
