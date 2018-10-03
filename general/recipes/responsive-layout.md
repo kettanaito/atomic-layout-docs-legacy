@@ -15,15 +15,15 @@ Any grid area that is not present in all template declarations automatically bec
 
 ```jsx
 const templateMobile = `
-    'thumbnail'
-    'heading'
-    'subheading'
+    thumbnail
+    heading
+    subheading
 `
 
 const templateDesktop = `
-    'thumbnail heading'
-    'thumbnail subheading'
-    'thumbnail meta'
+    thumbnail heading
+    thumbnail subheading
+    thumbnail meta
 `
 ```
 

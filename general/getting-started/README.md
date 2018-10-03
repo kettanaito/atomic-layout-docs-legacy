@@ -10,7 +10,7 @@ This section alone contains a high-level overview of topics to get started with 
 
 ### CSS Grid
 
-Atomic layout is based entirely on CSS Grid, thus making your experience with it a crucial part of experience acquired from the library itself. Worry not, we have prepared a set of incredible resources to get you familiar with what CSS Grid is and how to use it. Please, give it a read, as it is a remarkable technology on its own.
+Atomic layout is based entirely on CSS Grid, thus making your experience with it a crucial part of experience acquired from the library itself. Worry not, we have prepared a set of useful resources to get you familiar with what CSS Grid is and how to use it. Please, give it a read, as it is a remarkable technology on its own.
 
 * \*\*\*\*[**Introduction into CSS Grid \(MDN\)**](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)\*\*\*\*
 * \*\*\*\*[**CSS Grid vs Flexbox \(Medium\)**](https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf)\*\*\*\*
@@ -18,7 +18,7 @@ Atomic layout is based entirely on CSS Grid, thus making your experience with it
 
 ### Workflow
 
-Creating layouts demands a certain workflow. Read through the example-base guide to how workflow with Atomic layout feels like: 
+Creating layouts demands a certain workflow. Read through the example-base guide on how workflow with Atomic layout feels like: 
 
 {% page-ref page="workflow.md" %}
 

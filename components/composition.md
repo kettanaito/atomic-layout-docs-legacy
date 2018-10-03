@@ -2,7 +2,19 @@
 
 ## Specification
 
-`<Composition/>` is a base component that represents any layout composition. It always expects at least one template string, and any [additional props](../fundamentals/prop-aliases.md).
+Composition is a base component that represents any layout composition.
+
+## Props
+
+Composition always expects **at least one** template string, and any [additional props](../fundamentals/prop-aliases.md).
+
+| Prop name | Type | Description |
+| :--- | :--- | :--- |
+| `inline` | `boolean` | Renders composition with `display: inline-grid`. |
+
+{% hint style="success" %}
+Composition supports all [Prop aliases](../fundamentals/prop-aliases.md).
+{% endhint %}
 
 ## Usage
 
@@ -32,7 +44,7 @@ Since Atomic layout comes with responsive behavior built-in, you can define mult
 ```jsx
 const templateTablet = `
     logo menu
-    search
+    search search
 `
 ```
 
