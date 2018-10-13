@@ -1,10 +1,8 @@
----
-description: A single component to distribute a spacial relation in your layouts.
----
-
 # Introduction
 
-[Atomic layout](https://github.com/kettanaito/atomic-layout) is an implementational paradigm that delegates the spacial relation between any composites to the dedicated layout layer.
+[Atomic layout](https://github.com/kettanaito/atomic-layout) is a library that manages spacial distribution in your layouts. It ...
+
+an implementational paradigm that delegates the spacial relation between any composites to the dedicated layout layer.
 
 ## Motivation
 
