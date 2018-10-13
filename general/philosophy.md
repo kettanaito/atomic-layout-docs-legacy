@@ -18,15 +18,15 @@ Bootstrap and Atomic layout serve a different purpose. However, comparing them m
 
 In Bootstrap you used to have a grid system that sits on top of your page and serves as a ruler you can snap to. Once the amount of grid columns is specified, you start placing some components relatively to those columns.
 
-![Bootstrap grid visualization.](../.gitbook/assets/bootstrap-grid%20%283%29.png)
+![Bootstrap grid visualization](../.gitbook/assets/bootstrap-grid%20%283%29.png)
 
 Unfortunately, that kind of grid cannot be applied down to each component you render, so you end up writing additional CSS rules for positioning and spacing of your components and their children.
 
 ### Atomic layout
 
-Atomic layout encourages **nested** **composition**. That implies that any layout component can be a composition _and_ a composite at the same time. Think of it like a Bootstrap grid that can be applied all the way down, even to the farthest leaves of your layout.
+Atomic layout encourages _nested composition_. That implies that any layout component can be a composition _and_ a composite at the same time. Think of it like a Bootstrap grid that can be applied all the way down, even to the farthest leaves of your layout.
 
-![Atomic layout visualization.](../.gitbook/assets/atomic-layout%20%282%29.png)
+![Atomic layout visualization](../.gitbook/assets/atomic-layout%20%282%29.png)
 
-This allows to have a gris system as well, as grid is but a composition of columns. However, with this approach it will rather _complement_ the composition, instead of supervising it.
+Since a grid is a composition of columns, it can be created using Atomic layout as well. However, in this case it will be complementary to the composition, instead of supervising it.
 
