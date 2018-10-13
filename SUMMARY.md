@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Atomic layout](README.md)
+* [Introduction](README.md)
 
 ## General
 
