@@ -4,8 +4,6 @@ description: A single component to distribute a spacial relation in your layouts
 
 # Atomic layout
 
-## Introduction
-
 [Atomic layout](https://github.com/kettanaito/atomic-layout) is an implementational paradigm that delegates the spacial relation between any composites to the dedicated layout layer.
 
 ## Motivation
@@ -18,11 +16,11 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 ## Advantages
 
-* Based on standardized CSS Grid. No hacks or polyfills,
-* Supported in **more than 85%** of browsers around the glob,
-* Flexible responsive layouts without writing actual CSS,
-* [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast,
-* Helps to keep layout composites immutable and predictable,
+* Based on standardized CSS Grid. No hacks or polyfills.
+* Supported in **more than 85%** of browsers around the glob.
+* Flexible responsive layouts without writing actual CSS.
+* [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast.
+* Keeps layout composites immutable and predictable.
 * **~6 Kb gzipped!**
 
 ## Disadvantages

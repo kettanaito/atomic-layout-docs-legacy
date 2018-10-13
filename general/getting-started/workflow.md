@@ -1,16 +1,14 @@
 # Workflow
 
-## Foreword
-
 Atomic layout is based on CSS Grid. Please make yourself comfortable at that topic to eliminate most of the questions and make your experience superb. You don't have to be an expert, but having a basic knowledge on how CSS Grid works will help you to get more from Atomic layout.
 
 {% hint style="info" %}
 We recommend reading through the [Complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid).
 {% endhint %}
 
-## Introduction
+## Declarative UI
 
-The biggest difference when working with Atomic layout is that you declare what your layout suppose to look like, without explicitly telling how to achieve that.
+The biggest difference when working with Atomic layout is that you declare what your layout suppose to look like, without explicitly telling how that must be achieved.
 
 ## Creating a composition
 
@@ -36,16 +34,16 @@ import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
 const templateMobile = `
-    header
-    content
-    footer
+  header
+  content
+  footer
 `
 
 // grid areas on tablets
 const templateTablet = `
-    header header
-    content aside
-    footer footer
+  header header
+  content aside
+  footer footer
 `
 ```
 
@@ -63,24 +61,24 @@ import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
 const templateMobile = `
-    header
-    content
-    footer
+  header
+  content
+  footer
 `
 
 // grid areas on tablets
 const templateTablet = `
-    header header
-    content aside
-    footer footer
+  header header
+  content aside
+  footer footer
 `
 
 const Page = () => (
-    <Composition
-        template={templateMobile}
-        templateMd={templateTablet}>
-        {() => (/* See next step */)}
-    </Composition>
+  <Composition
+    template={templateMobile}
+    templateMd={templateTablet}>
+    {() => (/* See next step */)}
+  </Composition>
 )
 
 export default Page
@@ -98,32 +96,32 @@ import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
 const templateMobile = `
-    header
-    content
-    footer
+  header
+  content
+  footer
 `
 
 // grid areas on tablets
 const templateTablet = `
-    header header
-    content aside
-    footer footer
+  header header
+  content aside
+  footer footer
 `
 
 const Page = () => (
-    <Composition
-        template={templateMobile}
-        templateMd={templateTablet}
-    >
-        {({ Header, Content, Aside, Footer }) => (
-            <React.Fragment>
-                <Header>Header</Header>
-                <Content>Content</Content>
-                <Aside>Aside</Aside>
-                <Footer>Footer</Footer>
-            </React.Fragment>
-        )}
-    </Composition>
+  <Composition
+    template={templateMobile}
+    templateMd={templateTablet}
+  >
+    {({ Header, Content, Aside, Footer }) => (
+      <React.Fragment>
+        <Header>Header</Header>
+        <Content>Content</Content>
+        <Aside>Aside</Aside>
+        <Footer>Footer</Footer>
+      </React.Fragment>
+    )}
+  </Composition>
 )
 
 export default Page
