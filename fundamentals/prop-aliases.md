@@ -1,12 +1,12 @@
 # Prop aliases
 
-Atomic layout supports certain prop aliases for faster development. Those props can be assigned to any component exposed by the library, including the generated area components.
+Atomic layout supports prop aliases for faster development. These props can be assigned to any component exposed by the library, including the generated area components.
 
 {% hint style="info" %}
 Values of prop aliases can be applied conditionally. **Read about** [**Responsive props**](responsive-props.md).
 {% endhint %}
 
-See the list of aliases and corresponding original CSS property\(-ies\) in the tables below.
+Each prop alias can be associated with a single, or multiple corresponding CSS properties. See the list of all aliases and their CSS properties in the tables below.
 
 ## Grid
 
