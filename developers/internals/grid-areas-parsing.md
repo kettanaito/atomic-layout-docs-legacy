@@ -12,18 +12,18 @@ This information is meant for **library developers**. Although you may benefit f
 
 ### Definition
 
-`getAreasList(props: TProps) => TAreasList`
+`getAreasList(props: Props) => AreasList`
 
 ```typescript
-type TTemplate = {
-  breakpoint: TBreakpoint,
-  behavior: TBreakpointBehavior,
+type Template = {
+  breakpoint: Breakpoint,
+  behavior: BreakpointBehavior,
   areas: string[]
 }
 
-type TAreaList = {
+type AreaList = {
   areas: string[],
-  templates: TTemplate[]
+  templates: Template[]
 }
 ```
 
@@ -34,7 +34,7 @@ First step is getting the array of unique grid area names, their breakpoint and 
 ```jsx
 import { Composition } from 'atomic-layout'
 
-const tempalte = `
+const template = `
   first second
 `
 
@@ -81,12 +81,12 @@ Returns:
 
 ### Definition
 
-`getComponents(areasList: TAreasList) => TAreaComponentsMap`
+`getComponents(areasList: AreasList) => AreaComponentsMap`
 
 Generates React components for the necessary grid areas. Wraps conditional \(responsive\) areas in `<MediaQuery/>` component from `react-responsive`.
 
 ```typescript
-type TAreaComponentsMap = {
+type AreaComponentsMap = {
   [componentName: string]: Class<React.Component<any, void, void>
 }
 ```
