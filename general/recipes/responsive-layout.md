@@ -88,7 +88,7 @@ We have already used a responsive prop in the example above. By suffixing `templ
   template={templateMobile}
   templateLg={templateDesktop}
   gutter={10}
-  gutterLg={20}>
+  gutterLg={20}
   {({ Thumbnail, Heading, Subheading, Meta }) => (
     <React.Fragment>
       <Thumbnail>I am rendered always</Thumbnail>
