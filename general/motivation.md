@@ -15,17 +15,17 @@ import { Composition } from 'atomic-layout'
 
 <Composition template="icon text">
   {({ Icon, Text }) => (
-    <React.Fragment>
+    <>
       <Icon>...</Icon>
       <Text>...</Text>
-    </React.Fragment>
+    </>
   )}
 </Composition>
 ```
 
 ### Nested composition
 
-Any user interface part is a combination of smaller elements. Since we can wield a composition as a physical component, we can take the principle of components composition and apply it to the spacial composition.
+Any interface element can be a combination of other elements. Since we wield a composition as a physical component, we can have elements composition by nesting their respective components.
 
 ```jsx
 import { Composition } from 'atomic-layout'
@@ -38,12 +38,12 @@ const Button = () => (
 const CardItem = () => (
   <Composition template="actions">
     {({ Actions }) => (
-      <React.Fragment>
+      <>
         <Actions>
           {/* Rendering "Button" as a composite */}
           <Button>Purchase</Button>
         </Actions>
-      </React.Fragment>
+      </>
     )}
   </Composition>
 )

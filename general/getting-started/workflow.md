@@ -114,12 +114,12 @@ const Page = () => (
     templateMd={templateTablet}
   >
     {({ Header, Content, Aside, Footer }) => (
-      <React.Fragment>
+      <>
         <Header>Header</Header>
         <Content>Content</Content>
         <Aside>Aside</Aside>
         <Footer>Footer</Footer>
-      </React.Fragment>
+      </>
     )}
   </Composition>
 )

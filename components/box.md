@@ -19,9 +19,9 @@ import React from 'react'
 import { Box } from 'atomic-layout'
 
 const Header = ({ children }) => (
-    <Box paddingVertical="10" paddingVerticalMd="20">
-        {children}
-    </Box>
+  <Box paddingVertical="10" paddingVerticalMd="20">
+    {children}
+  </Box>
 )
 
 export default Header

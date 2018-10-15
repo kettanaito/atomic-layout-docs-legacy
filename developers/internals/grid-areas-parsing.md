@@ -16,14 +16,14 @@ This information is meant for **library developers**. Although you may benefit f
 
 ```typescript
 type TTemplate = {
-    breakpoint: TBreakpoint,
-    behavior: TBreakpointBehavior,
-    areas: string[]
+  breakpoint: TBreakpoint,
+  behavior: TBreakpointBehavior,
+  areas: string[]
 }
 
 type TAreaList = {
-    areas: string[],
-    templates: TTemplate[]
+  areas: string[],
+  templates: TTemplate[]
 }
 ```
 
@@ -35,17 +35,17 @@ First step is getting the array of unique grid area names, their breakpoint and 
 import { Composition } from 'atomic-layout'
 
 const tempalte = `
-    first second
+  first second
 `
 
 const templateTablet = `
-    first second
-    first third
+  first second
+  first third
 `
 
 <Composition
-    template={template}
-    tempalteMd={templateTablet} />
+  template={template}
+  tempalteMd={templateTablet} />
 ```
 
 ```javascript
@@ -56,24 +56,24 @@ Returns:
 
 ```javascript
 {
-    areas: ['first', 'second', 'third'],
-    templates: [
-        {
-            areas: ['first', 'second'],
-            behavior: 'up',
-            breakpoint: {
-                maxWidth: 567
-            }
-        },
-        {
-            areas: ['first', 'second', 'third'],
-            behavior: 'up',
-            breakpoint: {
-                minWidth: 769,
-                maxWidth: 992
-            }
-        }
-    ]
+  areas: ['first', 'second', 'third'],
+  templates: [
+    {
+      areas: ['first', 'second'],
+      behavior: 'up',
+      breakpoint: {
+        maxWidth: 567,
+      }
+    },
+    {
+      areas: ['first', 'second', 'third'],
+      behavior: 'up',
+      breakpoint: {
+        minWidth: 769,
+        maxWidth: 992,
+      },
+    },
+  ],
 }
 ```
 
@@ -87,7 +87,7 @@ Generates React components for the necessary grid areas. Wraps conditional \(res
 
 ```typescript
 type TAreaComponentsMap = {
-    [componentName: string]: Class<React.Component<any, void, void>
+  [componentName: string]: Class<React.Component<any, void, void>
 }
 ```
 
@@ -101,19 +101,19 @@ Returns:
 
 ```jsx
 {
-    /* First and second areas should render on all breakpoints */
-    First: AreaComponent,
-    Second: AreaComponent,
+  /* First and second areas should render on all breakpoints */
+  First: AreaComponent,
+  Second: AreaComponent,
     
-    /* Third area should render on "md" breakpoint and up */
-    Third: ({ children, ...restProps }) => (
-        <MediaQuery
-            component={AreaComponent}
-            minWidth={769}
-            {...restProps}>
-            {children}
-        </MediaQuery>
-    )
+  /* Third area should render on "md" breakpoint and up */
+  Third: ({ children, ...restProps }) => (
+    <MediaQuery
+      component={AreaComponent}
+      minWidth={769}
+      {...restProps}>
+      {children}
+    </MediaQuery>
+  )
 }
 ```
 

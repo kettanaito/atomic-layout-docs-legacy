@@ -60,12 +60,12 @@ const Card = () => (
     template={templateMobile}
     templateLg={templateDesktop}
     {({ Thumbnail, Heading, Subheading, Meta }) => (
-      <React.Fragment>
+      <>
         <Thumbnail>I am rendered always</Thumbnail>
         <Heading>I am rendered always</Heading>
         <Subheading>I am rendered always</Subheading>
         <Meta>I am rendered on "lg" breakpoint and up!</Meta>
-      </React.Fragment>
+      </>
     )}
   </Composition>
 )
