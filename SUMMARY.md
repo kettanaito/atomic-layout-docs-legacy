@@ -4,7 +4,7 @@
 
 ## General
 
-* [Motivation](general/philosophy.md)
+* [Motivation](general/motivation.md)
 * [Getting started](general/getting-started/README.md)
   * [Installation](general/getting-started/installation.md)
   * [Workflow](general/getting-started/workflow.md)

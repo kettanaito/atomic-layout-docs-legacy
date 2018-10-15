@@ -15,7 +15,7 @@ Think of how you create layouts today. You most likely have a set of reusable un
 
 Atomic layout exposes you a separate layer responsible for the spacial distribution between layout composites. Put simply, it allows you to set spacing and position of layout units **without mutating them**. That deprives from writing redundant CSS and ensures unit's predictability.
 
-{% page-ref page="general/philosophy.md" %}
+{% page-ref page="general/motivation.md" %}
 
 ## Advantages
 

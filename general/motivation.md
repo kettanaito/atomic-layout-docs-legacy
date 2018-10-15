@@ -53,7 +53,7 @@ const CardItem = () => (
 
 Having responsive design has become a must in the modern web development. In fact, it is such an essential part of a layout composition that it makes no sense to decouple them. Although its usage is not obligatory, Atomic layout comes with responsive behavior built-in, negating the need to go into CSS to define a layout's responsiveness.
 
-{% page-ref page="philosophy.md" %}
+{% page-ref page="motivation.md" %}
 
 ## Comparison
 
