@@ -1,6 +1,6 @@
 # Motivation
 
-In the era of erupting component-focused development, we often underestimate spacing as a powerful relation distributing tool. Rigid frameworks have taken place of what might have been a simple, implementational envisioning of spacing, and layout composition that it empowers.
+In the era of erupting component-focused development, we often underestimate spacing as a powerful relation distributing tool. Rigid frameworks have taken place of what might have been a simple, implementational vision of spacing, and layout composition that it empowers.
 
 Inspired by [atomic design](http://bradfrost.com/blog/post/atomic-web-design), Atomic layout comes in to bring developers a physical grasp over such previously empirical concepts as spacing and composition. Apart from challenging the interface development process, it also focuses on making it fast and standardized, resulting into **layout that is easy to understand and maintain**.
 
@@ -25,7 +25,7 @@ import { Composition } from 'atomic-layout'
 
 ### Nested composition
 
-Any user interface part is a combination of smaller elements. Since we can wield a composition as a physical component, we can take the principle of components composition and apply them to the spacial composition.
+Any user interface part is a combination of smaller elements. Since we can wield a composition as a physical component, we can take the principle of components composition and apply it to the spacial composition.
 
 ```jsx
 import { Composition } from 'atomic-layout'
@@ -51,13 +51,13 @@ const CardItem = () => (
 
 ### Responsive
 
-Having responsive design has become a must in the modern web development. In fact, it is such an essential part of a layout composition that it makes no sense to decouple them. Although its usage is not obligatory, Atomic layout comes with responsive behavior built-in, negating the need to go into CSS to define a layout's responsiveness.
+Having responsive design has become a must in the modern web development. In fact, it is such an essential part of a layout composition that it makes no sense to decouple them. Although its usage is not obligatory, Atomic layout comes with responsive behavior built-in. That negates the need for additional CSS to define conditional layout areas, or responsive css properties.
 
 {% page-ref page="motivation.md" %}
 
 ## Comparison
 
-Ideas encouraged by Atomic layout may be hard to understand at first. However, by comparing it to one of the most popular frameworks used to build user interfaces you can immediately get the high-level overview of what Atomic layout is about.
+Ideas encouraged by Atomic layout may be hard to understand at first. However, by comparing it to one of the most popular frameworks for user interfaces you can immediately get the high-level overview of what Atomic layout is about.
 
 ### Bootstrap
 
