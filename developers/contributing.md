@@ -27,21 +27,21 @@ git checkout -b {ISSUE_NUMBER}-{BRANCH_NAME}
 
 ### 2. Develop!
 
-#### Run Storybook
+#### Run development server
 
 ```bash
 npm start
 ```
 
-We develop in stories using [Storybook](https://github.com/storybooks/storybook). Create a story for your feature, or a bugfix scenario, and point your browser to `localhost:6020` after running the command above.
+This launches `webpack-dev-server` in watch mode to bundle the library upon any change. Pay attention to the useful messages and warnings in the terminal during the process.
 
-#### Run development server
+#### Run Storybook
 
 ```bash
-npm run dev
+npm run storybook
 ```
 
-This launches `webpack-dev-server` in watch mode to bundle the library upon any change. Pay attention to the useful messages and warnings in the terminal during the process.
+We develop in stories using [Storybook](https://github.com/storybooks/storybook). Create a story for your feature, or a bugfix scenario, and point your browser to the Storybook port after running the command above.
 
 ### 3. Commit the changes
 
