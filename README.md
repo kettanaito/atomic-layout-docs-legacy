@@ -19,16 +19,12 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 ## Advantages
 
-* Based on standardized CSS Grid. No hacks or polyfills
-* Supported in **more than 85%** of browsers around the globe
-* Flexible responsive layouts without writing actual CSS
-* [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast
+* Based on standardized CSS Grid, no hacks or polyfills
+* Supported in more than **85%** of browsers around the globe
+* Encourages consistent, maintainable layout declaration
+* Supports [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast
 * Keeps layout composites immutable and predictable
 * **~6 Kb gzipped!**
-
-## Disadvantages
-
-* No Internet Explorer support prior to version 11 \(See [CSS Grid support table](https://caniuse.com/#feat=css-grid)\)
 
 ## How does it work?
 

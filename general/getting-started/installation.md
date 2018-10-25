@@ -8,7 +8,7 @@ Atomic layout requires the following peer dependencies to work. Make sure to hav
 * [styled-components](https://github.com/styled-components/styled-components) \(3.0+\)
 
 {% hint style="info" %}
-Although Atomic layout is a paradigm, the current implementation uses the aforementioned  dependencies. Submit a [Pull request](https://github.com/kettanaito/atomic-layout/pulls) to bring Atomic layout to your favorite framework.
+Submit a [Pull request](https://github.com/kettanaito/atomic-layout/pulls) to bring Atomic layout to your favorite framework.
 {% endhint %}
 
 ## Install
