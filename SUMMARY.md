@@ -20,8 +20,8 @@
 
 ## Components
 
-* [Composition](components/composition.md)
 * [Box](components/box.md)
+* [Composition](components/composition.md)
 
 ## API
 

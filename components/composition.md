@@ -2,17 +2,17 @@
 
 ## Specification
 
-Composition is a base component that represents any layout composition.
+Component that represents a layout composition.
 
 ## Props
 
-Composition always expects **at least one** template string, and any [additional props](../fundamentals/prop-aliases.md).
+Composition inherits from [Box](box.md) component, thus is accepts the same props and CSS Grid props on top.
 
 | Prop name | Type | Description |
 | :--- | :--- | :--- |
 | `inline` | `boolean` | Renders composition with `display: inline-grid`. |
 
-{% hint style="success" %}
+{% hint style="info" %}
 Composition supports all [Prop aliases](../fundamentals/prop-aliases.md).
 {% endhint %}
 
@@ -20,13 +20,11 @@ Composition supports all [Prop aliases](../fundamentals/prop-aliases.md).
 
 ### Import the component
 
-First, import the `Composition` component from the library:
-
 ```jsx
 import { Composition } from 'atomic-layout'
 ```
 
-### Define template strings
+### Define templates
 
 Composition begins by defining a template string that consists of layout \(grid\) areas.
 
@@ -37,9 +35,11 @@ const templateMobile = `
 `
 ```
 
-Template string uses [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) syntax of CSS Grid, and visually represents the layout areas.
+{% hint style="info" %}
+Template string is just an alias for [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
+{% endhint %}
 
-Since Atomic layout comes with responsive behavior built-in, you can define multiple layout templates for a single composition based on the [breakpoints](../fundamentals/breakpoints.md) of your layout.
+Since Atomic layout comes with responsive built-in, you can define multiple layout templates for a single composition based on the [breakpoints](../fundamentals/breakpoints.md) of your layout.
 
 ```jsx
 const templateTablet = `
@@ -66,7 +66,9 @@ Once layout templates are defined, pass them as the respective `template` props 
 </Composition>
 ```
 
-> Area components are exposed as unique and capitalized keys based on your template definitions.
+{% hint style="success" %}
+Generated area components are exposed as unique capitalized keys of the children function.
+{% endhint %}
 
 ## Configuration
 
@@ -172,7 +174,7 @@ const ArtistCard = ({
   </Composition>
 )
 
-export default Foo
+export default ArtistCard
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
